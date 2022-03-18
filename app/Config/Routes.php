@@ -50,3 +50,5 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 $routes->get('listar', 'Cursos::index');
+$routes->get('crear', 'Cursos::crear');
+$routes->post('guardar', 'Cursos::guardar');

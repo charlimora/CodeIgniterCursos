@@ -3,6 +3,7 @@
         <?php
        // print_r($cursos);
         ?>
+    <a href="<?=base_url('crear') ?>">Crear un Libro</a>
     <h2>Listado de cursos</h2>
     <br>
         <table class="table table-dark">

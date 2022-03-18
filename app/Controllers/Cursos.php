@@ -19,4 +19,18 @@ class Cursos extends Controller{
         $datos['pie'] = view('template/piepagina');
         return view('cursos/listar',$datos);
     }
+
+    public function crear(){
+
+        $datos['cabecera'] = view('template/cabecera');
+        $datos['pie'] = view('template/piepagina');
+        return view('cursos/crear',$datos);
+    }
+
+    public function guardar(){
+
+        $nombre = $this->request->getVar('nombre');
+        print_r($nombre);
+    }
+
 }
