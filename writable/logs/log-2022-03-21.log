@@ -1,0 +1,14 @@
+ERROR - 2022-03-21 22:54:44 --> Error connecting to the database: Unknown database 'instituto'
+CRITICAL - 2022-03-21 22:54:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'instituto'
+#0 C:\xampp\htdocs\codeigniterCursos\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\codeigniterCursos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\codeigniterCursos\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\codeigniterCursos\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\codeigniterCursos\app\Controllers\Cursos.php(14): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\codeigniterCursos\system\CodeIgniter.php(832): App\Controllers\Cursos->index()
+#6 C:\xampp\htdocs\codeigniterCursos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+#7 C:\xampp\htdocs\codeigniterCursos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterCursos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\codeigniterCursos\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

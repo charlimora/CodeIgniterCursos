@@ -29,8 +29,25 @@ class Cursos extends Controller{
 
     public function guardar(){
 
+        //es necesario crear la instancia
+        $cursito = new Curso();
+        $nuevoNombre = '';
+        /*apenas recepcionamos el nombre
         $nombre = $this->request->getVar('nombre');
-        print_r($nombre);
-    }
+        se va a recepcionar la imagen */
+        if($imagen = $this->request->getFile('imagen')){
+            //le generamos un nuevo nombre de imagen
+            $nuevoNombre = $imagen->getRandomName();
+            //movemos al servidor en public
+            $imagen->move('..public/uploads',$nuevoNombre);
+            
+        } //cierro el if de la imagen
+        $datos=[
+            'nombre'=> $this->request->getVar('nombre'),
+            'imagen'=>$nuevoNombre
+        ];
+        $cursito->insert($datos);
+       echo 'Ingresado a la base de datos';
+    } //se cierra el método guardar
 
 }
