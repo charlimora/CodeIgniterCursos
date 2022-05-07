@@ -19,7 +19,9 @@
                 <?php foreach ($cursos as $curso): ?>
                 <tr>
                     <td><?=$curso['id'];?></td>
-                    <td><?=$curso['imagen'];?></td>
+                    <td>
+                    <img class="img-thumbnail" src="<?=base_url()?>/uploads/<?=$curso['imagen']; ?>" width="100" alt="">
+                    </td>
                     <td><?=$curso['nombre'];?></td>
                     <td>Editar/Borrar</td>
                 </tr>

@@ -1,0 +1,21 @@
+CRITICAL - 2022-03-29 00:18:27 --> Undefined variable $datos
+#0 C:\xampp\htdocs\codeigniterCursos\app\Controllers\Cursos.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 48)
+#1 C:\xampp\htdocs\codeigniterCursos\system\CodeIgniter.php(832): App\Controllers\Cursos->guardar()
+#2 C:\xampp\htdocs\codeigniterCursos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+#3 C:\xampp\htdocs\codeigniterCursos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterCursos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-29 00:19:05 --> Undefined variable $datos
+#0 C:\xampp\htdocs\codeigniterCursos\app\Controllers\Cursos.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 48)
+#1 C:\xampp\htdocs\codeigniterCursos\system\CodeIgniter.php(832): App\Controllers\Cursos->guardar()
+#2 C:\xampp\htdocs\codeigniterCursos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+#3 C:\xampp\htdocs\codeigniterCursos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterCursos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-29 00:19:46 --> Undefined variable $nuevoNombre
+#0 C:\xampp\htdocs\codeigniterCursos\app\Controllers\Cursos.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\codeigniterCursos\system\CodeIgniter.php(832): App\Controllers\Cursos->guardar()
+#2 C:\xampp\htdocs\codeigniterCursos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+#3 C:\xampp\htdocs\codeigniterCursos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterCursos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
